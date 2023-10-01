@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Product-Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cream grid h-screen place-items-center">
+    <!-- Container -->
+    <div class="container flex mx-auto bg-white max-w-xl rounded-xl mobile:flex-col">
+        <!-- Product Image -->
+        <div class="mobile:w-1/1 mobile:">
+            <img src="../images/image-product-desktop.jpg" class="rounded-l-xl mobile:hidden mobile:rounded-l-none mobile:rounded-t-xl" alt="">
+            <img src="../images/image-product-mobile.jpg" class="rounded-l-xl md:hidden mobile:rounded-l-none mobile:rounded-t-xl" alt="">
+        </div>
+        <!-- Description of the Product -->
+        <div class="flex flex-col mx-7 mt-5 space-y-3 md:w-full">
+            <h2 class="text-darkGrayishBlue tracking-wtWidest font-montserrat">PERFUME</h2>
+            <h1 class="font-bold text-3xl font-fraunces">Gabrielle Essence Eau <br>De Parfum</h1>
+            <p class="text-left text-sm leading-relaxed mr-7 text-darkGrayishBlue">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.
+            </p>
+            <p class=""><span class="font-bold text-4xl pr-8 text-emerald-600 font-fraunces">$149.99</span><span class="text-darkGrayishBlue line-through font-montserrat">$169.99</span></p>
+            <div class="mobile:mx-auto mobile:w-full mobile:pb-7">
+                <button class="flex bg-emerald-600 w-full text-center text-white rounded-lg h-12 hover:bg-darkCyan ">
+                    <img src="../images/icon-cart.svg" class="mt-4 ml-20" alt="">
+                    <p class="mt-3 ml-3">Add to Cart</p>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
